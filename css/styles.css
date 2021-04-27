@@ -118,6 +118,7 @@ img {
   padding-bottom: 32px;
 }
 
+/* підкреслення */
 .dash {
   position: relative;
 }
@@ -131,6 +132,10 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-text-color);
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dash::after {
@@ -152,16 +157,27 @@ img {
   align-items: center;
   margin-left: auto;
 }
+
 .contact-header .item + .item {
   margin-left: var(--margin);
 }
 
 .current {
   color: var(--accent-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-current:hover,
-.link.current:focus {
+.link-current:focus {
   color: var(--accent-text-color);
 }
 
@@ -180,6 +196,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .calm:hover,
 .calm:focus {
@@ -343,6 +363,34 @@ img {
   margin-left: 30px;
 }
 
+.thumb-picture {
+  position: relative;
+}
+
+.block-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 70px;
+  width: 370px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.information-block {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
 /* команда */
 .team {
   background-color: var(--third-bg-color);
@@ -383,6 +431,10 @@ img {
   border-radius: 50%;
   background-color: var(---title-text-color);
   margin-top: 16px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover,
@@ -424,6 +476,10 @@ img {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   padding: 16px 32px;
+
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logotype:hover,
@@ -457,12 +513,18 @@ img {
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .link-work {
@@ -481,6 +543,12 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+}
+
+.link-work {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-work:hover,
@@ -584,6 +652,10 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accession:hover,
 .accession:focus {
