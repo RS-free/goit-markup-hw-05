@@ -618,7 +618,7 @@ img {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   opacity: 0;
-  transition: transform var(--timing-function);
+  transition: transform var(--timing-function), opasity var(--timing-function);
 }
 
 .product-text {
