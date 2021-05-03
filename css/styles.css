@@ -617,8 +617,7 @@ img {
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  opacity: 0;
-  transition: transform var(--timing-function), opasity var(--timing-function);
+  transition: transform var(--timing-function);
 }
 
 .product-text {
@@ -629,15 +628,17 @@ img {
   padding: 63px 24px;
 }
 
+.product-thumb {
+  opacity: 1;
+}
+
 .example-thumb:hover .product-overlay {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .example-thumb:hover,
 :focus .product-overlay {
   transform: translateY(0);
-  opacity: 1;
 }
 
 /* ФУТЕР */
